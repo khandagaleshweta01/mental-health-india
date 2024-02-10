@@ -2,7 +2,7 @@
 .register-container {
   max-width: 400px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 20px 20px;
   border-radius: 10px;
   background-color: whitesmoke;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -18,7 +18,7 @@
   font-style: italic;
   letter-spacing: 2px;
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .register-form {
@@ -27,7 +27,7 @@
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 label {
@@ -40,9 +40,12 @@ label svg {
   margin-right: 10px; /* Add spacing between icon and text */
 }
 
+
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+select,
+input[type="date"] {
   width: 95%;
   padding: 10px;
   border: 1px solid black;

@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/About';
@@ -9,20 +10,20 @@ import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Router>
+    <Router>
+      <div>
+        <Navbar/>
         <Routes>
-          <Route path="/" element={<Navbar/>}/>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

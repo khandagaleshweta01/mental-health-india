@@ -1,6 +1,8 @@
 // Navbar.js
 import React from 'react';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom'; // Import Link from React Router
+import logo from '../logo.png'; // Import logo.png file
 
 import './Navbar.css'; // Import CSS file for styling
 
@@ -9,20 +11,21 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-left">
         <div className="logo">
-          <img src="https://images.app.goo.gl/NcMahEZsL5aXWiheA" alt="Logo" />
+          <img src={logo} alt="Logo" /> {/* Use imported logo */}
           <h1 className="website-name">Mental Health India</h1>
         </div>
       </div>
       <div className="navbar-right">
         <ul className="nav-links">
-          <li><a href="#" className="nav-link">Home</a></li>
-          <li><a href="#" className="nav-link">About</a></li>
-          <li><a href="#" className="nav-link">Services</a></li>
-          <li><a href="#" className="nav-link">Contact</a></li>
+          <li><Link to="/" className="nav-link">Home</Link></li>
+          <li><Link to="/about" className="nav-link">About</Link></li>
+          <li><Link to="/services" className="nav-link">Services</Link></li>
+          <li><Link to="/contact" className="nav-link">Contact</Link></li>
         </ul>
         <div className="auth-buttons">
-          <Button variant="outlined" color="inherit" href="#" className="login-button">Login</Button>
-          <Button variant="contained" color="primary" href="#" className="signup-button">Sign Up</Button>
+          {/* Use Link component for navigation */}
+          <Button variant="outlined" color="inherit" component={Link} to="/login" className="login-button">Login</Button>
+          <Button variant="contained" color="primary" component={Link} to="/register" className="signup-button">Sign Up</Button>
         </div>
         <div className="user-profile">
           {/* Assuming user avatar */}
