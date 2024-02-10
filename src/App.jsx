@@ -1,9 +1,14 @@
-import './App.css';
-import Navbar from './Components/Navbar';
+// App.js
+import React from 'react';
+import Navbar from './Components/Navbar'; // Correct the file path and name
+import OtherComponent from './Components/OtherComponent'; // Correct the file path and name
 
 function App() {
   return (
-    <Navbar/>
+    <div>
+      <Navbar />
+      <OtherComponent />
+    </div>
   );
 }
 

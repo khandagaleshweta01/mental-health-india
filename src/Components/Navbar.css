@@ -1,102 +1,121 @@
+/* Navbar.css */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 50px; /* Adjust size as needed */
-    margin-right: 10px;
-  }
-  
-  .website-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  .nav-link:hover {
-    color: #bbb;
-  }
-  
-  .navbar-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .auth-buttons {
-    margin-right: 20px;
-  }
-  
-  .login-button {
-    margin-right: 10px; /* Adjust spacing between buttons */
-  }
-  
-  .signup-button {
-    margin-right: 10px; /* Adjust spacing between buttons */
-  }
-  
-  .user-profile {
-    position: relative;
-  }
-  
-  .user-profile img {
-    width: 40px; /* Adjust size as needed */
-    border-radius: 50%; /* For rounded avatar */
-    cursor: pointer;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .user-profile:hover .dropdown-content {
-    display: block;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; /* Adjust size as needed */
+  margin-right: 10px;
+}
+
+.website-name {
+  font-size: 30px;
+  color: rebeccapurple;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-right: 60px;
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: rebeccapurple;
+  text-decoration: underline; /* Add underline during hover */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Adjust spacing between buttons */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px; /* Adjust width as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 4px; /* Add border radius */
+  padding: 8px 0; /* Add padding */
+  right: 0; /* Align dropdown to the right */
+  top: 48px; /* Adjust top position as needed */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px; /* Adjust padding */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.user-profile:hover .dropdown-content {
+  display: block;
+}
+
+.login-button,
+.signup-button {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid transparent; /* Add a border */
+  border-radius: 4px; /* Add border-radius for rounded corners */
+  padding: 8px 16px; /* Adjust padding */
+  cursor: pointer;
+}
+
+.login-button,
+.signup-button {
+  color: #fff;
+  background-color: transparent; /* Set background color */
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+}
+
+.login-button + .signup-button {
+  margin-left: 40px; /* Adjust spacing between buttons */
+}
